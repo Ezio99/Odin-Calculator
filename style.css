@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:black;
+}
+
+.calc-frame{
+    width: 550px;
+    height: auto;
+    margin-top: 30px;
+    border: 2px solid black ;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #142952;
+}
+
+.calc-display{
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.calc-display input{
+    flex-grow: 1;
+    height: 50px;
+    font-size: 25px;
+    margin: 4px;
+    background-color: #43716e;
+    border-color: #43716e;
+
+}
+
+.calc-buttons{
+    flex-grow: 1;
+    display: flex;
+}
+
+.calc-numbers,
+.calc-operators,
+.calc-meta{
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 8px; */
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    padding: 4px;
+    /* align-items: stretch; */
+}
+
+button{
+    height: 90px;
+    flex-basis: 70px;
+    flex-grow: 1;
+}
+
+.calc-numbers button{
+    background-color: #595959;
+    border-color: #595959;
+    
+}
+
+.calc-numbers button:hover{
+    background-color: #8c8c8c;
+    border-color: #8c8c8c;
+}
+
+.calc-operators{
+    flex-direction: column;
+}
+
+.calc-operators button{
+    width: 100%;
+    flex-basis: 50px;
+    flex-grow: 1;
+    background-color: #ffa31a;
+    border-color: #ffa31a;
+}
+
+.calc-operators button:hover{
+    background-color: #ffb84d;
+    border-color: #ffb84d;
+}
+
+.calc-meta{
+    flex-direction: column;
+}
+
+
+.calc-meta button{
+    width: 70px;
+    flex-basis: 50px;
+}
+
+#backspace,#AC{
+    background-color: #ff471a;
+    border-color: #ff471a;
+}
+
+#backspace:hover,
+#AC:hover{
+    background-color: #ff5c33;
+    border-color: #ff5c33;
+}
+
+
+
+
+#zero,
+#dot{
+    /* height: 40px; */
+    flex-basis: 60px; 
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    /* flex-grow: 0; */
+}
+
+
+
+.calc-operators{
+    flex-basis: 35%;
+}
+
+.calc-meta{
+    flex-basis: 15%;
+    gap:4px
+}
